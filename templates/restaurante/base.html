@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Restaurante - Comida Caseira</title>
+        <link rel="stylesheet" href="{% static '/styles/style.css' %}">
+    </head>
+    <body>
+        {% include 'restaurante/partials/_header.html' %}
+        {% block content %}{% endblock %}
+        {% include 'restaurante/partials/_footer.html' %}
+    </body>
+</html>
