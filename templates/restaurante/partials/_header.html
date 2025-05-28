@@ -1,5 +1,9 @@
 {% load static %}
 
 <header>
-  <h1>Restaurante de Comida Caseira</h1>
+    <div class="logo">Restaurante</div>
+    <nav class="nav-buttons">
+        <a href="{% url 'index' %}">Home</a>
+        <a href="{% url 'cardapio' %}">Cardápio</a>
+    </nav>
 </header>

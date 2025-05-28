@@ -1,17 +1,25 @@
 {% extends "restaurante/base.html" %} {% load static %} {% block content %}
   <main>
-    <img src="{% static 'assets/images/v1_3851.png' %}" alt="Foto" height="500px">
+    <img src="{% static 'assets/images/restaurant-foto.jpg' %}" alt="Foto" height="500px">
 
     <section class="descricao">
       <h2>Sobre nós</h2>
       <p>Oferecemos refeições saborosas, feitas com carinho, utilizando ingredientes frescos e selecionados. Venha experimentar o verdadeiro sabor da comida caseira!</p>
     </section>
 
-    <img src="{% static 'assets/images/v1_3865.png' %}" alt="Foto" height="500px">
+    <img src="{% static 'assets/images/balcao-foto.jpg' %}" alt="Foto" height="500px">
 
     <section class="localizacao">
       <h2>Onde estamos</h2>
       <p>Rua das Flores, 123 - Centro<br>Cidade Exemplo - Brasil</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!4v1748390880572!6m8!1m7!1srxOptEn-Lg5n_VrfkF1BrQ!2m2!1d-23.49775728106199!2d-46.74932733919554!3f194.59491613575184!4f-9.30050143519587!5f0.7820865974627469" 
+        width="600" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </section>
   </main>
 {% endblock %}
