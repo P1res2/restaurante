@@ -12,4 +12,5 @@ class Cardapio(models.Model):
     preco = models.DecimalField(max_digits=6, decimal_places=2)
     categoria = models.CharField(max_length=50, choices=OPCOES_CATEGORIA, default='')
     descricao = models.TextField(null=False, blank=False)
-    imagem = models.CharField(max_length=100, blank=True, null=True, default='default.jpg')
+    imagem = models.ImageField(upload_to="fotos/%Y/%m/%d/", height_field=None, width_field=None, max_length=None, blank=True)
+    publicado = models.BooleanField(default=False)
